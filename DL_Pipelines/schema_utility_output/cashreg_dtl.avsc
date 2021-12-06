@@ -1,0 +1,237 @@
+{
+    "type": "record",
+    "name": "DataRecord",
+    "namespace": "atb.cashreg_dtl",
+    "fields": [
+        {
+            "name": "data",
+            "type": {
+                "type": "record",
+                "name": "Data",
+                "fields": [
+                    {
+                        "name": "cd_store",
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "cd_register",
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "cd_date",
+                        "type": [
+                            "null",
+                            {
+                                "type": "int",
+                                "logicalType": "date"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "cd_paytype",
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "cd_precount",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "cd_depamt",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "cd_sysamt",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "cd_variance",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "cd_trancnt",
+                        "type": [
+                            "null",
+                            "int"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "cd_ffunds",
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "cd_fordepamt",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "cd_forprecount",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "cd_foreignrate",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    }
+                ]
+            }
+        },
+        {
+            "name": "beforeData",
+            "type": [
+                "null",
+                "Data"
+            ],
+            "default": null
+        },
+        {
+            "name": "headers",
+            "type": {
+                "type": "record",
+                "name": "Headers",
+                "namespace": "com.attunity.queue.msg",
+                "fields": [
+                    {
+                        "name": "operation",
+                        "type": {
+                            "type": "enum",
+                            "name": "operation",
+                            "symbols": [
+                                "INSERT",
+                                "UPDATE",
+                                "DELETE",
+                                "REFRESH"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "changeSequence",
+                        "type": "string"
+                    },
+                    {
+                        "name": "timestamp",
+                        "type": "string"
+                    },
+                    {
+                        "name": "streamPosition",
+                        "type": "string"
+                    },
+                    {
+                        "name": "transactionId",
+                        "type": "string"
+                    },
+                    {
+                        "name": "changeMask",
+                        "type": [
+                            "null",
+                            "bytes"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "columnMask",
+                        "type": [
+                            "null",
+                            "bytes"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "transactionEventCounter",
+                        "type": [
+                            "null",
+                            "long"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "transactionLastEvent",
+                        "type": [
+                            "null",
+                            "boolean"
+                        ],
+                        "default": null
+                    }
+                ]
+            }
+        }
+    ]
+}

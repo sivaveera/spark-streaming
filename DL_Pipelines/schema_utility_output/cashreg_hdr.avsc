@@ -1,0 +1,1218 @@
+{
+    "type": "record",
+    "name": "DataRecord",
+    "namespace": "atb.cashreg_hdr",
+    "fields": [
+        {
+            "name": "data",
+            "type": {
+                "type": "record",
+                "name": "Data",
+                "fields": [
+                    {
+                        "name": "ch_store",
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_register",
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_date",
+                        "type": [
+                            "null",
+                            {
+                                "type": "int",
+                                "logicalType": "date"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_empl",
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_ttltrans",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_netsales",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_overrings",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_underrings",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_ttlsales",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_unk6",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_paidouts",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_unk8",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_tender1",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_tender2",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_tender3",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_tender4",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_tender5",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_tender6",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_ttldep",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_unk16",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_overshort",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_gcsold",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_lbl1amt",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_unk20",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_unk21",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_nontxsls",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_unk23",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_lbl2amt",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_tender7",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_tender8",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_tender9",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_tender10",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_txrtns",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_nontxrtns",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_unk31",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_unk32",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_unk33",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_voids",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_tilldiff",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_layso",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_sltaxes",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_comment",
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_comment2",
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_comment3",
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_void_cmt",
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_unk40",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_beg_till",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_end_till",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_chrg1",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_chrg2",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_chrg3",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_chrg4",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_chrg5",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_chrg6",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_chrg7",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_chrg8",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_chrg9",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_chrg10",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_event1",
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_event2",
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_event3",
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_event4",
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_event5",
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_event6",
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_event7",
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_event8",
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_event9",
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_event10",
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_roa",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_unk42",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_unk43",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_unk44",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_unk45",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_unk46",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_unk47",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_unk48",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_unk49",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_unk50",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_oring_tax",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_uring_tax",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_paid_tax",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_tax1",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_tax2",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_tax3",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_tax4",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_unk55",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_unk56",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_unk57",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_unk58",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_unk59",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_unk60",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_posted",
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_postdate",
+                        "type": [
+                            "null",
+                            {
+                                "type": "int",
+                                "logicalType": "date"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "ch_postbatch",
+                        "type": [
+                            "null",
+                            "int"
+                        ],
+                        "default": null
+                    }
+                ]
+            }
+        },
+        {
+            "name": "beforeData",
+            "type": [
+                "null",
+                "Data"
+            ],
+            "default": null
+        },
+        {
+            "name": "headers",
+            "type": {
+                "type": "record",
+                "name": "Headers",
+                "namespace": "com.attunity.queue.msg",
+                "fields": [
+                    {
+                        "name": "operation",
+                        "type": {
+                            "type": "enum",
+                            "name": "operation",
+                            "symbols": [
+                                "INSERT",
+                                "UPDATE",
+                                "DELETE",
+                                "REFRESH"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "changeSequence",
+                        "type": "string"
+                    },
+                    {
+                        "name": "timestamp",
+                        "type": "string"
+                    },
+                    {
+                        "name": "streamPosition",
+                        "type": "string"
+                    },
+                    {
+                        "name": "transactionId",
+                        "type": "string"
+                    },
+                    {
+                        "name": "changeMask",
+                        "type": [
+                            "null",
+                            "bytes"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "columnMask",
+                        "type": [
+                            "null",
+                            "bytes"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "transactionEventCounter",
+                        "type": [
+                            "null",
+                            "long"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "transactionLastEvent",
+                        "type": [
+                            "null",
+                            "boolean"
+                        ],
+                        "default": null
+                    }
+                ]
+            }
+        }
+    ]
+}

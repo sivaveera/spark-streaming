@@ -1,0 +1,286 @@
+{
+    "type": "record",
+    "name": "DataRecord",
+    "namespace": "aptos.sales.exp_customer.v1",
+    "fields": [
+        {
+            "name": "data",
+            "type": {
+                "type": "record",
+                "name": "Data",
+                "fields": [
+                    {
+                        "name": "if_entry_no",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "interface_control_flag",
+                        "type": [
+                            "null",
+                            "int"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "record_type",
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "line_id",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "customer_role",
+                        "type": [
+                            "null",
+                            "int"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "title",
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "first_name",
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "last_name",
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "address_1",
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "address_2",
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "city",
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "county",
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "state",
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "country",
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "post_code",
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "telephone_no1",
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "telephone_no2",
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "customer_no",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "more_info_flag",
+                        "type": [
+                            "null",
+                            "int"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "pos_tax_jurisdiction_code",
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "fax",
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "email_address",
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "default": null
+                    }
+                ]
+            }
+        },
+        {
+            "name": "beforeData",
+            "type": [
+                "null",
+                "Data"
+            ],
+            "default": null
+        },
+        {
+            "name": "headers",
+            "type": {
+                "type": "record",
+                "name": "Headers",
+                "namespace": "com.attunity.queue.msg",
+                "fields": [
+                    {
+                        "name": "operation",
+                        "type": {
+                            "type": "enum",
+                            "name": "operation",
+                            "symbols": [
+                                "INSERT",
+                                "UPDATE",
+                                "DELETE",
+                                "REFRESH"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "changeSequence",
+                        "type": "string"
+                    },
+                    {
+                        "name": "timestamp",
+                        "type": "string"
+                    },
+                    {
+                        "name": "streamPosition",
+                        "type": "string"
+                    },
+                    {
+                        "name": "transactionId",
+                        "type": "string"
+                    },
+                    {
+                        "name": "changeMask",
+                        "type": [
+                            "null",
+                            "bytes"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "columnMask",
+                        "type": [
+                            "null",
+                            "bytes"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "transactionEventCounter",
+                        "type": [
+                            "null",
+                            "long"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "transactionLastEvent",
+                        "type": [
+                            "null",
+                            "boolean"
+                        ],
+                        "default": null
+                    }
+                ]
+            }
+        }
+    ]
+}

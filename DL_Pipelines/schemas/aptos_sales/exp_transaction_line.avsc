@@ -1,0 +1,256 @@
+{
+    "type": "record",
+    "name": "DataRecord",
+    "namespace": "aptos.sales.exp_transaction_line.v1",
+    "fields": [
+        {
+            "name": "data",
+            "type": {
+                "type": "record",
+                "name": "Data",
+                "fields": [
+                    {
+                        "name": "if_entry_no",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "interface_control_flag",
+                        "type": [
+                            "null",
+                            "int"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "record_type",
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "line_id",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "line_sequence",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "line_object_type",
+                        "type": [
+                            "null",
+                            "int"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "line_object",
+                        "type": [
+                            "null",
+                            "int"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "line_action",
+                        "type": [
+                            "null",
+                            "int"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "gross_line_amount",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "pos_discount_amount",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "db_cr_none",
+                        "type": [
+                            "null",
+                            "int"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "attachment_qty",
+                        "type": [
+                            "null",
+                            "int"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "line_void_flag",
+                        "type": [
+                            "null",
+                            "int"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "voiding_reversal_flag",
+                        "type": [
+                            "null",
+                            "int"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "reference_type",
+                        "type": [
+                            "null",
+                            "int"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "reference_no",
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "unit_of_measure",
+                        "type": [
+                            "null",
+                            "int"
+                        ],
+                        "default": null
+                    }
+                ]
+            }
+        },
+        {
+            "name": "beforeData",
+            "type": [
+                "null",
+                "Data"
+            ],
+            "default": null
+        },
+        {
+            "name": "headers",
+            "type": {
+                "type": "record",
+                "name": "Headers",
+                "namespace": "com.attunity.queue.msg",
+                "fields": [
+                    {
+                        "name": "operation",
+                        "type": {
+                            "type": "enum",
+                            "name": "operation",
+                            "symbols": [
+                                "INSERT",
+                                "UPDATE",
+                                "DELETE",
+                                "REFRESH"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "changeSequence",
+                        "type": "string"
+                    },
+                    {
+                        "name": "timestamp",
+                        "type": "string"
+                    },
+                    {
+                        "name": "streamPosition",
+                        "type": "string"
+                    },
+                    {
+                        "name": "transactionId",
+                        "type": "string"
+                    },
+                    {
+                        "name": "changeMask",
+                        "type": [
+                            "null",
+                            "bytes"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "columnMask",
+                        "type": [
+                            "null",
+                            "bytes"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "transactionEventCounter",
+                        "type": [
+                            "null",
+                            "long"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "transactionLastEvent",
+                        "type": [
+                            "null",
+                            "boolean"
+                        ],
+                        "default": null
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,251 @@
+{
+    "type": "record",
+    "name": "DataRecord",
+    "namespace": "atb.shipndtl",
+    "fields": [
+        {
+            "name": "data",
+            "type": {
+                "type": "record",
+                "name": "Data",
+                "fields": [
+                    {
+                        "name": "nd_number",
+                        "type": [
+                            "null",
+                            "int"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "nd_line",
+                        "type": [
+                            "null",
+                            "int"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "nd_scan",
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "nd_id3",
+                        "type": [
+                            "null",
+                            "int"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "nd_color",
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "nd_size",
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "nd_ord_qty",
+                        "type": [
+                            "null",
+                            "int"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "nd_rec_qty",
+                        "type": [
+                            "null",
+                            "int"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "nd_pd_id",
+                        "type": [
+                            "null",
+                            "int"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "nd_orig",
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "nd_lineref",
+                        "type": [
+                            "null",
+                            "int"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "nd_cost",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "nd_retl",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "nd_ext_cost",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "nd_ext_retl",
+                        "type": [
+                            "null",
+                            {
+                                "type": "bytes",
+                                "precision": 20,
+                                "scale": 6,
+                                "logicalType": "decimal"
+                            }
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "nd_packlist",
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "nd_status",
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "default": null
+                    }
+                ]
+            }
+        },
+        {
+            "name": "beforeData",
+            "type": [
+                "null",
+                "Data"
+            ],
+            "default": null
+        },
+        {
+            "name": "headers",
+            "type": {
+                "type": "record",
+                "name": "Headers",
+                "namespace": "com.attunity.queue.msg",
+                "fields": [
+                    {
+                        "name": "operation",
+                        "type": {
+                            "type": "enum",
+                            "name": "operation",
+                            "symbols": [
+                                "INSERT",
+                                "UPDATE",
+                                "DELETE",
+                                "REFRESH"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "changeSequence",
+                        "type": "string"
+                    },
+                    {
+                        "name": "timestamp",
+                        "type": "string"
+                    },
+                    {
+                        "name": "streamPosition",
+                        "type": "string"
+                    },
+                    {
+                        "name": "transactionId",
+                        "type": "string"
+                    },
+                    {
+                        "name": "changeMask",
+                        "type": [
+                            "null",
+                            "bytes"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "columnMask",
+                        "type": [
+                            "null",
+                            "bytes"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "transactionEventCounter",
+                        "type": [
+                            "null",
+                            "long"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "transactionLastEvent",
+                        "type": [
+                            "null",
+                            "boolean"
+                        ],
+                        "default": null
+                    }
+                ]
+            }
+        }
+    ]
+}
