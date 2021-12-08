@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS TRANSIENT_DL.LKP_SRC_TO_REF_HUB_STORE
   REC_CREATE_TIMESTAMP TIMESTAMP
 ) 
 USING DELTA 
-LOCATION 's3://skx-dataeng-nonprod-datalake-staging/transient/datalake/integrated/lkp_src_to_ref_hub_store' 
+LOCATION 's3://test-dataeng-nonprod-datalake-staging/transient/datalake/integrated/lkp_src_to_ref_hub_store' 
 TBLPROPERTIES ('layer' = 'SILVER');
 
 -- COMMAND ----------
@@ -60,7 +60,7 @@ CREATE TABLE IF NOT EXISTS TRANSIENT_DL.LKP_SRC_TO_REF_HUB_CURRENCY
   REC_CREATE_TIMESTAMP TIMESTAMP
 ) 
 USING DELTA 
-LOCATION 's3://skx-dataeng-nonprod-datalake-staging/transient/datalake/integrated/lkp_src_to_ref_hub_currency' 
+LOCATION 's3://test-dataeng-nonprod-datalake-staging/transient/datalake/integrated/lkp_src_to_ref_hub_currency' 
 TBLPROPERTIES ('layer' = 'SILVER');
 
 -- COMMAND ----------
@@ -115,7 +115,7 @@ CREATE TABLE IF NOT EXISTS TRANSIENT_DL.LKP_SRC_TO_REF_HUB_PRODUCT
   REC_CREATE_TIMESTAMP TIMESTAMP
 ) 
 USING DELTA
-LOCATION 's3://skx-dataeng-nonprod-datalake-staging/transient/datalake/integrated/lkp_src_to_ref_hub_product ' 
+LOCATION 's3://test-dataeng-nonprod-datalake-staging/transient/datalake/integrated/lkp_src_to_ref_hub_product ' 
 TBLPROPERTIES ('layer' = 'SILVER');
 
 -- COMMAND ----------
@@ -159,7 +159,7 @@ select count(*) row_count from  TRANSIENT_DL.LKP_SRC_TO_REF_HUB_PRODUCT;
 
 CREATE TABLE IF NOT EXISTS TRANSIENT_DL.ORDER_ITEMS_BASE_DAILY
 USING DELTA 
-LOCATION 's3://skx-dataeng-nonprod-datalake-staging/transient/datalake/integrated/order_items_base_daily' 
+LOCATION 's3://test-dataeng-nonprod-datalake-staging/transient/datalake/integrated/order_items_base_daily' 
 TBLPROPERTIES ('LAYER' = 'SILVER')
 AS 
 select * from 
@@ -207,7 +207,7 @@ CREATE TABLE IF NOT EXISTS TRANSIENT_DL.DLY_ORDERITEMS_STORE
   REC_CREATE_TIMESTAMP TIMESTAMP
 ) 
 USING DELTA 
-LOCATION 's3://skx-dataeng-nonprod-datalake-staging/transient/datalake/integrated/dly_orderitems_store' 
+LOCATION 's3://test-dataeng-nonprod-datalake-staging/transient/datalake/integrated/dly_orderitems_store' 
 TBLPROPERTIES ('layer' = 'SILVER');
 
 -- COMMAND ----------
@@ -248,7 +248,7 @@ CREATE TABLE IF NOT EXISTS TRANSIENT_DL.DLY_ORDERITEMS_SHIPSTORE
   REC_CREATE_TIMESTAMP TIMESTAMP
 ) 
 USING DELTA 
-LOCATION 's3://skx-dataeng-nonprod-datalake-staging/transient/datalake/integrated/dly_orderitems_shipstore' 
+LOCATION 's3://test-dataeng-nonprod-datalake-staging/transient/datalake/integrated/dly_orderitems_shipstore' 
 TBLPROPERTIES ('layer' = 'SILVER');
 
 -- COMMAND ----------
@@ -289,7 +289,7 @@ CREATE TABLE IF NOT EXISTS TRANSIENT_DL.DLY_ORDERITEMS_CURRENCY
   REC_CREATE_TIMESTAMP TIMESTAMP
 ) 
 USING DELTA 
-LOCATION 's3://skx-dataeng-nonprod-datalake-staging/transient/datalake/integrated/dly_orderitems_currency' 
+LOCATION 's3://test-dataeng-nonprod-datalake-staging/transient/datalake/integrated/dly_orderitems_currency' 
 TBLPROPERTIES ('layer' = 'SILVER');
 
 -- COMMAND ----------
@@ -375,7 +375,7 @@ CREATE TABLE IF NOT EXISTS TRANSIENT_DL.DLY_ORDERITEMS_PRODUCT
   REC_CREATE_TIMESTAMP TIMESTAMP
 ) 
 USING DELTA 
-LOCATION 's3://skx-dataeng-nonprod-datalake-staging/transient/datalake/integrated/dly_orderitems_product' 
+LOCATION 's3://test-dataeng-nonprod-datalake-staging/transient/datalake/integrated/dly_orderitems_product' 
 TBLPROPERTIES ('layer' = 'SILVER');
 
 -- COMMAND ----------
@@ -512,7 +512,7 @@ CREATE TABLE IF NOT EXISTS TRANSIENT_DL.DLY_ORDERITEMS
   REC_CREATE_TIMESTAMP TIMESTAMP
 ) 
 USING DELTA 
-LOCATION 's3://skx-dataeng-nonprod-datalake-staging/transient/datalake/integrated/dly_orderitems' 
+LOCATION 's3://test-dataeng-nonprod-datalake-staging/transient/datalake/integrated/dly_orderitems' 
 TBLPROPERTIES ('layer' = 'SILVER');
 
 -- COMMAND ----------
