@@ -4,7 +4,7 @@ import requests
 import os
 from pathlib import Path
 
-DOMAIN = 'skechers-dev.cloud.databricks.com'
+DOMAIN = 'test-dev.cloud.databricks.com'
 TOKEN = os.environ['DB_TOKEN']
 BASE_URL = 'https://%s/api/2.0/jobs/runs/submit' % DOMAIN
 
