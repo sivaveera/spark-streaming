@@ -89,8 +89,8 @@ if __name__ == "__main__":
 
 		# DOMAIN = dbutils.secrets.get("dbfs_env", "domain")
 		# TOKEN = dbutils.secrets.get("dbfs_env", "token")
-		DOMAIN = "skechers-dev.cloud.databricks.com"
-		TOKEN = "dapif509892a9b927a46ecde6fb6a18099c6"
+		DOMAIN = "test.cloud.databricks.com"
+		TOKEN = "dadddddpif50986"
 
 		BASE_URL_JOBS_RUN_NOW = 'https://%s/api/2.0/jobs/run-now' % DOMAIN
 		BASE_URL_JOBS_RUNS_LIST = 'https://%s/api/2.0/jobs/runs/list' % DOMAIN
