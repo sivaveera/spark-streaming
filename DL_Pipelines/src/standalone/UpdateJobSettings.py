@@ -3,7 +3,7 @@ import requests
 import json
 import os
 
-DOMAIN = "skechers-prod.cloud.databricks.com"
+DOMAIN = "test-prod.cloud.databricks.com"
 TOKEN = os.environ['DB_TOKEN_DEV']
 
 BASE_URL_JOBS_LIST = 'https://%s/api/2.0/jobs/list' % DOMAIN
