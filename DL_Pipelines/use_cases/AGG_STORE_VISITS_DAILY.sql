@@ -11,14 +11,14 @@ EFFECTIVE_END_TIMESTAMP TIMESTAMP,
 REC_CREATE_TIMESTAMP TIMESTAMP
 )
 USING DELTA 
-LOCATION 's3://skx-dataeng-nonprod-datalake-staging/transient/datalake/integrated/lkp_src_to_ref_hub_store_visits' 
+LOCATION 's3://test-dataeng-nonprod-datalake-staging/transient/datalake/integrated/lkp_src_to_ref_hub_store_visits' 
 TBLPROPERTIES ('layer'='SILVER');
 
 -- COMMAND ----------
 
 CREATE TABLE IF NOT EXISTS TRANSIENT_DL.STORE_TRAFFIC_BASE_DAILY
 USING DELTA 
-LOCATION 's3://skx-dataeng-nonprod-datalake-staging/transient/datalake/integrated/store_traffic_base_daily' 
+LOCATION 's3://test-dataeng-nonprod-datalake-staging/transient/datalake/integrated/store_traffic_base_daily' 
 TBLPROPERTIES ('LAYER' = 'SILVER')
 AS 
 SELECT * 
