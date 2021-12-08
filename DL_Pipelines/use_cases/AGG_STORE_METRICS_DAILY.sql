@@ -1,7 +1,7 @@
 -- Databricks notebook source
 CREATE TABLE IF NOT EXISTS TRANSIENT_DL.DTL_RETAIL_SALES_BASE_DAILY
 USING DELTA 
-LOCATION 's3://skx-dataeng-nonprod-datalake-staging/transient/datalake/integrated/dtl_retail_sales_base_daily' 
+LOCATION 's3://test-dataeng-nonprod-datalake-staging/transient/datalake/integrated/dtl_retail_sales_base_daily' 
 TBLPROPERTIES ('LAYER' = 'SILVER')
 AS 
 SELECT * 
