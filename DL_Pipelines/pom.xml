@@ -1,6 +1,6 @@
 <project>
-    <groupId>com.skechers</groupId>
-    <artifactId>skechers-databricks-pipelines</artifactId>
+    <groupId>com.test</groupId>
+    <artifactId>test-databricks-pipelines</artifactId>
     <modelVersion>4.0.0</modelVersion>
     <version>0.0.1</version>
     <dependencies>
