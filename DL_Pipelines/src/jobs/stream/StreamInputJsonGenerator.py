@@ -338,17 +338,17 @@ print(base_json_data)
 
 # Define the clusters based on the env
 if env.lower() == 'dev':
-        ecom_cluster = '1125-164036-thrum252'
-        aptos_cluster = '1125-164247-pease253'
-        apropos_cluster = '1125-164500-visor254'
+        ecom_cluster = '1125-test-thrum252'
+        aptos_cluster = '1125-test-pease253'
+        apropos_cluster = '1125-test-visor254'
 elif env.lower() == 'stage':
-        ecom_cluster = '1111-171251-floor112'
-        aptos_cluster = '1113-111419-cal128'
-        apropos_cluster = '1113-101749-demos127'
+        ecom_cluster = '1111-test-floor112'
+        aptos_cluster = '1113-test-cal128'
+        apropos_cluster = '1113-test-demos127'
 elif env.lower() == 'prod':
-        ecom_cluster = '1127-120944-fine1'
-        aptos_cluster = '1127-170818-where3'
-        apropos_cluster = '1127-170704-thine2'
+        ecom_cluster = '1127-test-fine1'
+        aptos_cluster = '1127-test-where3'
+        apropos_cluster = '1127-test-thine2'
 
 for job in job_names:
     params_lst = ["--job_name", job]
