@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS TRANSIENT_DL.LKP_SRC_TO_REF_HUB_STORE
   REC_CREATE_TIMESTAMP TIMESTAMP
 ) 
 USING DELTA 
-LOCATION 's3://skx-dataeng-nonprod-datalake-staging/transient/datalake/integrated/lkp_src_to_ref_hub_store' 
+LOCATION 's3://test-dataeng-nonprod-datalake-staging/transient/datalake/integrated/lkp_src_to_ref_hub_store' 
 TBLPROPERTIES ('layer' = 'SILVER');
 
 -- COMMAND ----------
@@ -69,7 +69,7 @@ CREATE TABLE IF NOT EXISTS TRANSIENT_DL.LKP_SRC_TO_REF_HUB_PRODUCT
   REC_CREATE_TIMESTAMP TIMESTAMP
 ) 
 USING DELTA
-LOCATION 's3://skx-dataeng-nonprod-datalake-staging/transient/datalake/integrated/lkp_src_to_ref_hub_product ' 
+LOCATION 's3://test-dataeng-nonprod-datalake-staging/transient/datalake/integrated/lkp_src_to_ref_hub_product ' 
 TBLPROPERTIES ('layer' = 'SILVER');
 
 -- COMMAND ----------
@@ -164,7 +164,7 @@ CREATE TABLE IF NOT EXISTS TRANSIENT_DL.DLY_SALES_STORE
   REC_CREATE_TIMESTAMP TIMESTAMP
 ) 
 USING DELTA 
-LOCATION 's3://skx-dataeng-nonprod-datalake-staging/transient/datalake/integrated/dly_sales_store' 
+LOCATION 's3://test-dataeng-nonprod-datalake-staging/transient/datalake/integrated/dly_sales_store' 
 TBLPROPERTIES ('layer' = 'SILVER');
 
 -- COMMAND ----------
@@ -259,7 +259,7 @@ CREATE TABLE IF NOT EXISTS TRANSIENT_DL.DLY_SALES_PRODUCT
   REC_CREATE_TIMESTAMP TIMESTAMP
 ) 
 USING DELTA 
-LOCATION 's3://skx-dataeng-nonprod-datalake-staging/transient/datalake/integrated/dly_sales_product' 
+LOCATION 's3://test-dataeng-nonprod-datalake-staging/transient/datalake/integrated/dly_sales_product' 
 TBLPROPERTIES ('layer' = 'SILVER');
 
 -- COMMAND ----------
@@ -411,7 +411,7 @@ CREATE TABLE IF NOT EXISTS TRANSIENT_DL.DLY_SALES
   REC_CREATE_TIMESTAMP TIMESTAMP
 ) 
 USING DELTA 
-LOCATION 's3://skx-dataeng-nonprod-datalake-staging/transient/datalake/integrated/dly_sales' 
+LOCATION 's3://test-dataeng-nonprod-datalake-staging/transient/datalake/integrated/dly_sales' 
 TBLPROPERTIES ('layer' = 'SILVER');
 
 -- COMMAND ----------
