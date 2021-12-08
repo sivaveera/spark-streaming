@@ -8,11 +8,11 @@ env = os.environ['ENVT']
 
 # Tokens to access the databricks environments
 # DEV
-DOMAIN_DEV = 'skechers-dev.cloud.databricks.com'
+DOMAIN_DEV = 'test-dev.cloud.databricks.com'
 # Stage
-DOMAIN_STAGE = 'skechers-staging.cloud.databriget.com'
+DOMAIN_STAGE = 'test-staging.cloud.databriget.com'
 # Prod
-DOMAIN_PROD = 'skechers-prod.cloud.databricks.com'
+DOMAIN_PROD = 'test-prod.cloud.databricks.com'
 
 if env == 'dev':
 	DOMAIN = DOMAIN_DEV
@@ -32,7 +32,7 @@ json_req = '{"job_id": "INPUT_JOB_ID",  "notebook_params": {"domain_name": "INPU
 
 
 # This function has been used to parse the parameters
-# >> python CallNotebookJob.py --domain_name GARPAC_BRAZIL --job_name "SJ1-GARPAC_BRAZIL skeordrd"
+# >> python CallNotebookJob.py --domain_name test --job_name "SJ1-test skeordrd"
 def parse_arguments():
 	argparser = argparse.ArgumentParser(description="Invoke Notebook Scheduler Job")
 	argparser.add_argument('--job_id', type=str, help='Enter RunSubmit Job ID')
