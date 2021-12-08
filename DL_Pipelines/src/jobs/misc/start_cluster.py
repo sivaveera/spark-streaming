@@ -1,12 +1,12 @@
 import os
 import requests
 
-DOMAIN = 'skechers-dev.cloud.databricks.com'
+DOMAIN = 'test-dev.cloud.databricks.com'
 TOKEN = os.environ['DB_TOKEN']
 BASE_URL = 'https://%s/api/2.0/clusters/start' % DOMAIN
 CLUSTER_STATUS_URL = 'https://%s/api/2.0/clusters/get?cluster_id=' % DOMAIN
 
-json_dict = {"cluster_id": "0428-134127-sea13"}
+json_dict = {"cluster_id": "0428-test-sea13"}
 
 
 def call_spark_api_get(url):
