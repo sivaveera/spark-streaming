@@ -5,7 +5,7 @@ import utils.common_utils as util
 import os
 from pathlib import Path
 
-DOMAIN = 'skechers-dev.cloud.databricks.com'
+DOMAIN = 'test-dev.cloud.databricks.com'
 TOKEN = os.environ['DB_TOKEN']
 BASE_URL = 'https://%s/api/2.0/jobs/runs/submit' % DOMAIN
 
@@ -32,7 +32,7 @@ if __name__ == '__main__':
     # args = parse_arguments()
     # file_path = args.json_path
 
-    file_path = '/input_jsons/structured/ecom_skechers.order_invoice_job.json'
+    file_path = '/input_jsons/structured/test.order_invoice_job.json'
     # file_path = '/input_jsons/integrated/ecom_order_and_payment_dtls_job.json'
     json_path = curr_dir + file_path
     print("Input JSON: ", json_path)
