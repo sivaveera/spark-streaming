@@ -10,15 +10,15 @@ env = 'dev'
 
 # Tokens to access the databricks environments
 # DEV
-DOMAIN_DEV = 'skechers-dev.cloud.databricks.com'
+DOMAIN_DEV = 'test-dev.cloud.databricks.com'
 TOKEN_DEV = os.environ['DB_TOKEN_DEV']
 
 # Stage
-DOMAIN_STAGE = 'skechers-staging.cloud.databriget_column_listcks.com'
+DOMAIN_STAGE = 'test-staging.cloud.databriget_column_listcks.com'
 # TOKEN_STAGE = os.environ['DB_TOKEN_STAGE']
 
 # Prod
-DOMAIN_PROD = 'skechers-prod.cloud.databricks.com'
+DOMAIN_PROD = 'test-prod.cloud.databricks.com'
 # TOKEN_PROD = os.environ['DB_TOKEN_PROD']
 
 if env == 'dev':
