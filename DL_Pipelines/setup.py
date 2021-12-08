@@ -17,13 +17,13 @@ print(install_requires)
 setuptools.setup(
     name="elvis-datalake",
     version="artemis",
-    author="Surya T",
-    author_email="surya.tewari-ns@skechers.com",
+    author="Siva Veera",
+    author_email="sivaveera@gmail.com",
     description="Elvis Data Lake Project",
     long_description=long_description,
     install_requires=install_requires,
     long_description_content_type="text/markdown",
-    url="https://github.com/skechers-dataeng/elvis-datalake/tree/development",
+    url="https://github.com/spark-streaming/tree/development",
     packages=['etl', 'utils'],
     package_dir={'etl': 'src/etl', 'utils': 'src/utils'},
     classifiers=[
